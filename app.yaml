@@ -1,0 +1,16 @@
+application: kangshiang-beta
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /index.html
+  static_files: index.html
+  upload: index.html
+
+- url: /profile_pic.jpg
+  static_files: profile_pic.jpg
+  upload: profile_pic.jpg
+- url: /.*
+  script: main.application
